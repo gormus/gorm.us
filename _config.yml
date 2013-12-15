@@ -1,0 +1,12 @@
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts:     ./_layouts
+timezone:    America/Los_Angeles
+safe: true
+lsi: false
+pygments: true
+host: gormus.github.io.dev
+port: 4000
+baseurl: /
+url: http://gormus.github.io.dev:4000

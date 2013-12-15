@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    <link rel="stylesheet" href="/css/app.css" />
+    <script src="/js/vendor/modernizr.min.js"></script>
+  </head>
+  <body>
+
+
+    <header class="row">
+      <div class="large-12 columns">
+
+        <div class="contain-to-grid sticky">
+          <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name"><h1><a href="/index.html">Osman Gormus</a></h1></li>
+              <li class="toggle-topbar menu-icon"><a href=""><span></span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+              <ul class="right">
+                <li class="divider show-for-small-only"></li>
+                <li><a href="/about.html">About</a></li>
+                <li class="divider"></li>
+                <li><a href="/articles.html">Articles</a></li>
+                <li class="divider"></li>
+                <li><a href="/contact.html">Contact</a></li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+
+      </div>
+    </header>
+
+
+    <div class="row">
+      <div class="medium-8 columns">
+
+        {{ content }}
+
+      </div>
+      <div class="medium-4 columns">
+        <div class="panel radius">
+          <h3>Connect</h3>
+          <ul class="side-nav addthis_toolbox addthis_default_style">
+            <li><a rel="external" href="https://drupal.org/user/70527" title="Follow on Drupal"><i data-icon="d" class="icon"></i> Drupal</a></li>
+            <li><a rel="external" href="https://github.com/gormus" title="Follow on GitHub"><i data-icon="g" class="icon"></i> GitHub</a></li>
+            <li><a rel="external" class="addthis_button_linkedin_follow" title="Follow on LinkedIn" addthis:userid="gormus"><i data-icon="i" class="icon"></i> LinkedIn</a></li>
+            <li><a rel="external" class="addthis_button_twitter_follow" title="Follow on Twitter" addthis:userid="osmangormus"><i data-icon="t" class="icon"></i> Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr>
+
+        This work by <a xmlns:cc="http://creativecommons.org/ns#" href="http://gorm.us/" property="cc:attributionName" rel="cc:attributionURL">Osman Gormus</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.&nbsp;
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+      </div>
+    </footer>
+
+
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+    <script src="/js/app.min.js"></script>
+  </body>
+</html>
