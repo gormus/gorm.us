@@ -1,0 +1,43 @@
+<script>
+var addthis_config = {
+  "username": "",
+  "ui_cobrand": "Osman Gormus",
+  "data_track_clickback": true,
+  "data_ga_tracker": "{{ site.OG.google_analytics.account }}"
+};
+</script>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.OG.addthis.pub }}"></script>
+
+{% if site.OG.addthis.layers == true %}
+<script>
+addthis.layers({
+  "theme" : "transparent",
+  "share" : {
+    "position" : "right",
+    "numPreferredServices" : 5,
+    "services" : "linkedin,twitter,facebook,more",
+    "offset": {
+      "top" : "30%"
+    }
+  },
+  "follow" : {
+    "services" : [
+      {
+        "service" : "linkedin",
+        "id" : "gormus"
+      },
+      {
+        "service" : "twitter",
+        "id" : "osmangormus"
+      },
+      {
+        "service" : "facebook",
+        "id" : "osman.gormus"
+      }
+    ],
+    "mobile" : true,
+    "desktop" : false
+  }
+});
+</script>
+{% endif %}

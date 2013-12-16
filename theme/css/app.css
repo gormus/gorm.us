@@ -5713,14 +5713,52 @@ th.hide-for-touch {
 .icon-dropbox:before {
   content: "b"; }
 
-.icon-cloudapp:before {
+.icon-cloud:before {
   content: "c"; }
 
 .icon-github:before {
   content: "g"; }
 
-.icon-elusive-icons:before {
+.icon-git:before {
   content: "a"; }
+
+.icon-cc:before {
+  content: "e"; }
+
+.icon-tags:before {
+  content: "j"; }
+
+.icon-plus:before {
+  content: "+"; }
+
+/**
+ * Helper Classes.
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
 
 header {
   margin-bottom: 3em !important; }
@@ -5732,10 +5770,17 @@ footer {
 footer > .columns {
   padding-bottom: 3em; }
 
-.contain-to-grid .top-bar {
+.contain-to-grid.fixed .top-bar {
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); }
 
 .meta {
   font-size: 0.85rem;
   margin-bottom: 2em; }
+
+.top-bar-section ul.right li > a {
+  font-size: 1.5rem; }
+
+dl.post-teaser {
+  font-size: 0.85rem;
+  line-height: 1.4; }

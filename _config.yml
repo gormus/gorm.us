@@ -4,9 +4,34 @@ plugins:     ./_plugins
 layouts:     ./_layouts
 timezone:    America/Los_Angeles
 safe: true
-lsi: false
+lsi: true
 pygments: true
-host: gormus.github.io.dev
-port: 4000
-baseurl: /
-url: http://gormus.github.io.dev:4000
+permalink: pretty
+
+
+domain: gorm.us
+title: Osman Gormus
+author:
+  name: Osman Gormus
+  email: osman@gorm.us
+  github: gormus
+  twitter: osmangormus
+  linkedin: gormus
+
+archive_path: /archive.html
+categories_path : /Categories
+tags_path : /Tags
+atom_path : /atom.xml
+rss_path : /rss.xml
+
+paginate: 5
+
+OG:
+  version: 0.0.1
+  disqus:
+    shortname: gormus
+  addthis:
+    pub: ra-4eade63c4ff64988
+    layers: false
+  google_analytics:
+    account: UA-239502-1
