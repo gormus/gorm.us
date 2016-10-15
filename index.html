@@ -1,46 +1,136 @@
----
-layout: page
-title: Osman Gormus
-description:
-categories: none
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Osman Gormus</title>
+  <style>
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
 
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  line-height: 1.4;
+}
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: lowercase;
+  font-weight: 400;
+  background: #EEEEEE;
+  cursor: default;
+}
+h1 {
+  font-weight: inherit;
+}
+::selection { background: #A9452D; color: #fff; text-shadow: none; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+#hello {
+  margin: 30px auto;
+  max-width: 400px;
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  outline: 1px solid #444;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 10;
+}
+#hello:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #444444 url("https://s.gravatar.com/avatar/5c439331b3b194435c0eb502f65272d3?s=600") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: -1;
+}
+#hello > img,
+#hello > .content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 12;
+}
+#hello > img {
+  z-index: 11;
+  opacity: 0.8;
+}
+#hello > .content {
+  padding: 1em 2em;
+  width: calc(100% - 4em);
+  text-shadow: 1px 1px 3px #A9452D;
+  top: auto;
+  text-align: center
+}
+#hello h1 {
+  margin: 0;
+}
+#hello ul {
+  margin: 0;
+  padding: 0;
+}
+#hello ul li {
+  list-style: none;
+  padding: 0.5em 0;
+  display: inline;
+}
+#hello ul li:before {
+  content: "•";
+  letter-spacing: 0.25em;
+  color: #A9452D;
+}
+#hello ul li:first-child:before {
+  content: "";
+}
+#hello a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#hello a span {
+  border-bottom: 1px solid transparent;
+}
+#hello a:hover span {
+  border-bottom-color: #A9452D;
+}
+  </style>
+  <script src="https://use.fontawesome.com/de095b6753.js"></script>
+</head>
+<body>
 
-
-{% for post in paginator.posts %}
-  <article>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <h6 class="subheader">{{ post.date | date_to_long_string}}</h6>
-    {{ post.excerpt }}
-  </article>
-{% endfor %}
-
-
-<!-- Pagination links -->
-{% if paginator.total_pages > 1 %}
-<div class="pagination-centered">
-  <ul class="pagination">
-    {% if paginator.previous_page %}
-      <li class="arrow"><a rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
-    {% else %}
-      <li class="arrow unavailable"><a href="">&laquo;</a></li>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <li class="current"><a href="">{{ page }}</a></li>
-      {% elsif page == 1 %}
-        <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
-      {% else %}
-        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-      {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      <li class="arrow"><a rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
-    {% else %}
-      <li class="arrow unavailable"><a href="">&raquo;</a></li>
-    {% endif %}
-  </ul>
+<div id="hello">
+  <div class="content">
+    <h1>Osman Gormus</h1>
+    <ul>
+      <li>Lives in <a id="location" href="https://goo.gl/maps/MPvQhEpzTXL2"><i class="fa fa-location-arrow" aria-hidden="true"></i> <span>San Francisco, CA</span></a></li>
+      <li>Works at <a id="project6" href="https://www.project6.com/"><i class="fa fa-briefcase" aria-hidden="true"></i> <span>Project6 Design</span></a></li>
+      <li>Contributes to <a id="drupal-cms" href="https://www.drupal.org/u/osman"><i class="fa fa-drupal" aria-hidden="true"></i> <span>Drupal</span></a></li>
+      <li>codes at <a id="github" href="https://github.com/gormus" aria-label="Follow @gormus on GitHub"><i class="fa fa-github" aria-hidden="true"></i> <span>GitHub@gormus</span></a></li>
+      <li><a id="twitter" href="https://twitter.com/osmangormus"><i class="fa fa-twitter" aria-hidden="true"></i> about this & that <span>@osmangormus</span></a></li>
+      <li><a id="linkedin" href="https://www.linkedin.com/in/gormus"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
 </div>
-{% endif %}
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-239502-1', 'auto');
+  ga('require', 'linkid');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
