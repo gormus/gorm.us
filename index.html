@@ -108,9 +108,9 @@ h1 {
 </head>
 <body>
 
-<div id="hello">
+<div itemscope itemtype="http://schema.org/LocalBusiness" id="hello">
   <div class="content">
-    <h1>Osman Gormus</h1>
+    <h1 itemprop="name">Osman Gormus</h1>
     <ul>
       <li>Lives in <a id="location" href="https://goo.gl/maps/MPvQhEpzTXL2"><i class="fa fa-location-arrow" aria-hidden="true"></i> <span>San Francisco, CA</span></a></li>
       <li>Works at <a id="project6" href="https://www.project6.com/"><i class="fa fa-briefcase" aria-hidden="true"></i> <span>Project6 Design</span></a></li>
@@ -122,12 +122,19 @@ h1 {
   </div>
 </div>
 
+<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<meta itemprop="addressLocality" content="San Francisco">
+<meta itemprop="addressRegion" content="California"></span>
+<meta itemprop="image" content="https://s.gravatar.com/avatar/5c439331b3b194435c0eb502f65272d3?s=600">
+<meta itemprop="url" content="http://gorm.us/">
+<meta itemprop="telephone" content="+14158272170">
+<meta itemprop="email" content="osman@gorm.us">
+  
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-239502-1', 'auto');
   ga('require', 'linkid');
   ga('send', 'pageview');
