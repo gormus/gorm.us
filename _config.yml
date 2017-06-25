@@ -5,7 +5,7 @@ layouts:     ./_layouts
 timezone:    America/Los_Angeles
 safe: true
 lsi: true
-pygments: true
+highlighter: rouge
 permalink: pretty
 
 
