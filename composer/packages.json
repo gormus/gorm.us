@@ -1,0 +1,42 @@
+{
+  "packages": {
+    "gormus/drupal-module": {
+      "dev-main": {
+        "name": "gormus/drupal-module",
+        "version": "dev-main",
+        "type": "drupal-module",
+        "source": {
+          "url": "git@github.com:gormus/drupal-module.git",
+          "type": "git"
+        }
+      },
+      "1.0.0": {
+        "name": "gormus/drupal-module",
+        "version": "1.0.0",
+        "type": "drupal-module",
+        "dist": {
+          "url": "https://github.com/gormus/drupal-module/archive/refs/tags/1.0.0.zip",
+          "type": "zip"
+        }
+      },
+      "1.0.1": {
+        "name": "gormus/drupal-module",
+        "version": "1.0.1",
+        "type": "drupal-module",
+        "dist": {
+          "url": "https://github.com/gormus/drupal-module/archive/refs/tags/1.0.1.zip",
+          "type": "zip"
+        }
+      },
+      "1.0.2": {
+        "name": "gormus/drupal-module",
+        "version": "1.0.2",
+        "type": "drupal-module",
+        "dist": {
+          "url": "https://github.com/gormus/drupal-module/archive/refs/tags/1.0.2.zip",
+          "type": "zip"
+        }
+      }
+    }
+  }
+}
