@@ -7,7 +7,8 @@
         "type": "drupal-module",
         "source": {
           "url": "git@github.com:gormus/drupal-module.git",
-          "type": "git"
+          "type": "git",
+          "reference": "tags/1.0.2"
         }
       },
       "1.0.0": {
